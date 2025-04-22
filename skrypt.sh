@@ -67,7 +67,13 @@ if [[ $1 == "--help" ]] || [[ $1 == "-h" ]]; then
 fi
 
 
+repo_url="https://github.com/KowalewskiM1337/Cw4-NarzedziaIT.git"
+clone_dir="repo"
 
+function init_repo() {
+	git clone "$repo_url" "$clone_dir"
+	export PATH="$PWD/$clone_dir:$PATH"
+}
 
 
 
