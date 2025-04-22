@@ -86,4 +86,8 @@ function create_errors() {
 }
 
 
-
+function update_gitignore() {
+	if ! grep -q '^errorx/$' .gitignore; then
+		echo "errorx/" >> .gitignore
+	fi
+}
