@@ -26,3 +26,12 @@ if [[ $1 == "--logs" ]] && [[ -z "$2" ]]; then
 		i=$(( $i + 1 ))
 	done
 fi
+
+if [[ $1 == "--help" ]]; then
+	echo "Wszystkie mozliwe opcje wykonania skryptu: "
+	echo "--date   (wyswietla dziejsza date)"
+	echo "--logs   (tworzy 100 plikow logx.txt)"
+	echo "--logs [nr]   (tworzy okreslona liczbe plikow logx.txt)"
+	echo "--help   (wyswietla te strone)"
+fi
+
