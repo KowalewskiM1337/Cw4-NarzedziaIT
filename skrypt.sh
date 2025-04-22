@@ -64,6 +64,8 @@ if [[ $1 == "--help" ]] || [[ $1 == "-h" ]]; then
 	echo "--logs   (tworzy 100 plikow logx.txt)"
 	echo "--logs [nr]   (tworzy okreslona liczbe plikow logx.txt)"
 	echo "--help   (wyswietla te strone)"
+	echo "--init   (klonuje repo i ustawia PATH)"
+	echo "--error [nr]   (tworzy pliki errorx/errorX.txt)"
 fi
 
 
