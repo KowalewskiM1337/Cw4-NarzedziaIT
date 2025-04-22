@@ -76,7 +76,14 @@ function init_repo() {
 }
 
 
+function create_errors() {
+	local count=${1:-100}
+	mkdir -p errorx
+	for ((i = 1; i <= count; i++)); do
+		touch "errorx/error$i.txt"
+	done
 
+}
 
 
 
